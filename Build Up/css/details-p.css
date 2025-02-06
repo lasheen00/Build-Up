@@ -1,0 +1,235 @@
+
+nav
+ {
+    background-color:  #fff;
+ }
+ nav img
+ {
+    width:70px; height:70px;
+ }
+ nav h1
+ {
+    font-size: 30px;
+ }
+ 
+ 
+ 
+ .section
+{
+    margin-top: 50px;
+
+}
+.col-md-7 .line
+{
+    width: 75%;
+    height: 5px;
+    background-color: gray;
+    margin: 50px;
+    border-radius: 2px;
+}
+
+
+.col-md-5
+{
+
+    position: relative;
+}
+.col-md-5::after
+{
+    content: '';
+    width: 2px;
+    height: 90%;
+    background-color: gray;
+    position: absolute;
+    left: -10px;
+    top: 10%;
+
+}
+.col-md-5 h3
+{
+    position: relative;
+}
+.col-md-5 h3::after
+{
+    content: '';
+    width:25% ;
+    height:3px ;
+    background-color: #000;
+    position: absolute;
+    left:0;
+    top: 100%;
+}
+.p-comment
+{
+    
+    width: 100%;
+    height: 30px;
+    background-color: rgba(225, 225, 225, .5);
+    border-radius: 15px;
+    
+
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    /* background: #f4f4f4; */
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    width: 200px;
+    background: #0B66C1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.comment {
+    background: #e9ecef;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.scroll-box {
+    width: 550px;  /* عرض العنصر */
+    height: 500px; /* ارتفاع العنصر */
+    border-left: 2px solid gray;
+    padding: 10px;
+    
+    overflow: auto; 
+}
+
+
+
+
+/* 
+#commentForm
+{
+    text-align: center;
+    margin: 20px;
+}
+#commentForm input
+{
+    width: 50%;
+    border: 2px solid #000;
+
+    
+}
+#commentForm button
+{
+    padding: 5px 10px;
+    color: white;
+    background: coral;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.comment-box {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 5%;
+  }
+  .comment-box input {
+    width: 80%;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: #555;
+    pointer-events: none; 
+  }
+  .delete-btn {
+    padding: 2px 4px;
+    color: #000;
+    background: white;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+  } */
+  
+
+
+
+
+
+
+
+@media screen and (max-width:600px)
+{
+
+
+
+    nav img
+ {
+    width:35px; height:35px;
+ }
+ nav h1
+ {
+    font-size: 15px;
+ }
+ 
+    .row
+    {
+        width: 80%;
+        margin: 10%;
+    }
+    .col-md-5::after
+    {
+        display: none;
+    }
+    h5,p
+    {
+        text-align: center;
+    }
+    .col-md-5 h3::after
+    {
+        content: '';
+        width:40% ;
+        height:3px ;
+        background-color: #000;
+        position: absolute;
+        left:0;
+        top: 100%;
+    }
+}

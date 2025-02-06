@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Up Consultancy</title>
+
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/details-c.css">
+</head>
+
+<body>
+  <nav class="navbar ">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex" href="#">
+        <img src="../photos/build up consultancy.svg" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
+      </a>
+    </div>
+  </nav>
+
+
+    
+
+  <div class="section">
+    <div class="containerfluid">
+        <div class="row "   >
+
+          <div class="col-md-7"id="rowData">
+
+          </div>
+            
+
+
+            <div class="col-md-5 mt-2 scroll-box">
+
+              <h2>Comments:</h2>
+              <input type="text" id="commentAuthor" name="author" required placeholder="Name"><br><br>
+              <select id="commentRating">
+                  <option value="5">⭐⭐⭐⭐⭐</option>
+                  <option value="4">⭐⭐⭐⭐</option>
+                  <option value="3">⭐⭐⭐</option>
+                  <option value="2">⭐⭐</option>
+                  <option value="1">⭐</option>
+              </select><br><br>
+              <textarea id="commentBody" placeholder="Your comment ..."></textarea><br><br>
+              <button onclick="submitComment()">Submit</button>
+
+              <h2 class="mt-2">Reviews:</h2>
+              <div id="commentsList"></div>
+
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/details-c.js"></script>
+</body>
+
+</html>
